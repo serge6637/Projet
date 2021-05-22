@@ -1,0 +1,38 @@
+while True:
+    from random import randint
+    cpf=str(randint(10000000000,99999999999))
+    cpf=map(int, cpf)
+    cpf=list(cpf)
+    
+    novocpf=cpf[:-2]
+    new=[ ]
+    for a in novocpf:
+        new.append(a)
+    novo=[ ]
+    for i in range(10,1,-1):
+        novo.append(i)
+    product = [x*y for x,y in zip(novo,new)]
+    True
+    soma=sum(product)
+    resultado1= soma*10%11
+    
+    if resultado1==cpf[9]:
+    
+        novocpf2=cpf[:-1]
+        new1=[ ]
+        for a in novocpf2:
+            new1.append(a)
+        novo1=[ ]
+        for i in range(11,1,-1):
+            novo1.append(i)
+        # checagem do segundo numero final do cpf
+        
+        product1 = [x*y for x,y in zip(novo1,new1)]
+        True
+        soma1=sum(product1)
+        resultado2= soma1*10%11
+        
+    if  resultado1 == cpf[9] and  resultado2 == cpf[10]:
+        
+        print(cpf)
+        break
