@@ -1,0 +1,46 @@
+serge=input('digite seu cpf:  ')
+serge=list(serge)
+cpf=map(int, serge)
+cpf=list(cpf)
+# da primeira linha até a quata linha transformei o cpf digitado em uma lista
+if len(cpf)>11 or len(cpf)<11:
+    print('CPF INVALIDO')
+else:
+    
+#da linha 6 até a linha 9 eu retringi o cpf a 11 digito
+# da linha 12 até o fim segui o algoritmo de validaçao de cpf
+    novocpf=cpf[:-2]
+    new=[ ]
+    for a in novocpf:
+        new.append(a)
+    novo=[ ]
+    for i in range(10,1,-1):
+        novo.append(i)
+    product = [x*y for x,y in zip(novo,new)]
+    True
+    soma=sum(product)
+    resultado1= soma*10%11
+
+    if resultado1!=cpf[9]:
+        print('CPF INVALIDO')
+    else:
+        ...
+    
+        novocpf2=cpf[:-1]
+        new1=[ ]
+        for a in novocpf2:
+            new1.append(a)
+        novo1=[ ]
+        for i in range(11,1,-1):
+            novo1.append(i)
+        # checagem do segundo numero final do cpf
+        
+        product1 = [x*y for x,y in zip(novo1,new1)]
+        True
+        soma1=sum(product1)
+        resultado2= soma1*10%11
+        
+        if resultado1 != cpf[9] or resultado2 != cpf[10] or len(set(cpf))==1:
+            print('cpf INVALIDO')
+        else:
+            print('CPF VALIDO')
