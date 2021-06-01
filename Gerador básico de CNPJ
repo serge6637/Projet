@@ -1,4 +1,3 @@
-
 while True:
     from random import randint
     cnpj1=str(randint(10000000000000,99999999999999))
@@ -33,33 +32,9 @@ while True:
     if calculodoresto==cnpj[12] and  calculodoresto2==cnpj[13]:
         
         
-        print(cnpj)
+        print(''.join(map(str,cnpj)))
         print(calculodoresto)
         print(calculodoresto2)
     
         
         break   
-                              
-    if calculodoresto>9  :
-        calculodoresto2=0
-       
-        if calculodoresto==cnpj[12] and calculodoresto2==cnpj[13]:
-            print(cnpj)
-            print(calculodoresto)
-            print(calculodoresto2)
-            break
-    if calculodoresto2>9:
-        calculodoresto2=0
-        if calculodoresto2==cnpj[13] and calculodoresto==cnpj[12]:
-            print(cnpj)
-            print(calculodoresto)
-            print(calculodoresto2)
-            break
-    if  calculodoresto2>9 and calculodoresto>9:
-        calculodoresto=0
-        calculodoresto2=0
-        if calculodoresto==cnpj[12] and calculodoresto2==cnpj[13]:
-            print(cnpj)
-            print(calculodoresto)
-            print(calculodoresto2)
-            break
