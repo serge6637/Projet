@@ -31,9 +31,11 @@ while True:
     for i in range(1):
         b.append(i)    
     if calculodoresto==cnpj[12] and  calculodoresto2==cnpj[13]:
+        cnpj=''.join(map(str,cnpj))
         
         
-        print(cnpj)
+
+        print(f'{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}')
         print(calculodoresto)
         print(calculodoresto2)
     
@@ -44,14 +46,16 @@ while True:
         calculodoresto2=0
        
         if calculodoresto==cnpj[12] and calculodoresto2==cnpj[13]:
-            print(cnpj)
+            cnpj=''.join(map(str,cnpj))
+            print(f'{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}')
             print(calculodoresto)
             print(calculodoresto2)
             break
     if calculodoresto2>9:
         calculodoresto2=0
         if calculodoresto2==cnpj[13] and calculodoresto==cnpj[12]:
-            print(cnpj)
+            cnpj=''.join(map(str,cnpj))
+            print(f'{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}')
             print(calculodoresto)
             print(calculodoresto2)
             break
@@ -59,7 +63,9 @@ while True:
         calculodoresto=0
         calculodoresto2=0
         if calculodoresto==cnpj[12] and calculodoresto2==cnpj[13]:
-            print(cnpj)
+           
+            cnpj=''.join(map(str,cnpj))
+            print(f'{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}')
             print(calculodoresto)
             print(calculodoresto2)
             break
